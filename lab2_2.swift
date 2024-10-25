@@ -2,18 +2,18 @@ import Foundation
 
 // 1. Опишіть множину chSet із символів а, b, c та d.
 let chSet: Set<Character> = ["a", "b", "c", "d"]
-
+print(chSet)
 // 2. Створіть mutable множину mChSet на основі множини chSet.
 var mChSet = chSet
-
+print(mChSet)
 // 3. Виведіть на екран кількість елементів множини mChSet.
 print("Кількість елементів у mChSet: \(mChSet.count)")
 
 // 4. Вставте символ е в множину mChSet.
 mChSet.insert("e")
-
+print("Не відсортована множина: \(mChSet)")
 // 5. Створіть множину srtChSet, яка є відсортованою версією множини mChSet.
-let srtChSet = Set(mChSet.sorted())
+let srtChSet = mChSet.sorted()
 print("Відсортована множина: \(srtChSet)")
 
 // 6. Видаліть з множини mChSet символ f та виведіть повідомлення про видалення.
